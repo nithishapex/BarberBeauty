@@ -1252,8 +1252,19 @@ a { color: inherit; }
 
 .contact-facts a { color: var(--purple-deep); font-weight: 800; text-decoration: none; }
 
-.contact-facts svg,
-.float-call svg { width: 20px; height: 20px; flex: none; color: var(--purple); }
+.contact-facts svg {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  color: var(--purple);
+}
+
+.float-call svg {
+  width: 26px;
+  height: 26px;
+  flex: none;
+  color: #fff;
+}
 
 .map-frame {
   width: 100%;
