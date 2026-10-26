@@ -12,9 +12,9 @@ export default function FloatingActions() {
         href={CONTACT.whatsappWidgetHref}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="WhatsApp Nordic Beauty"
+        aria-label="WhatsApp Crownora Barber Academy"
       >
-        <img src="/images/whatsapp.png" alt="" width="80" height="80" />
+        <img src="/images/whatsapp.png" alt="" width="70" height="70" />
       </a>
     </div>
   )

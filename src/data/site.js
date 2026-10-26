@@ -17,22 +17,22 @@ export const CONTACT = {
 }
 
 export const SOCIAL = [
-  {
-    label: 'Nordic Beauty on Instagram',
-    href: 'https://www.instagram.com/nordicbeautydxb/',
-    icon: 'instagram',
-  },
-  {
-    label: 'Nordic Beauty on Facebook',
-    href: 'https://www.facebook.com/nordicbeautydxb/',
-    icon: 'facebook',
-  },
+  // {
+  //   label: 'Nordic Beauty on Instagram',
+  //   // href: 'https://www.instagram.com/nordicbeautydxb/',
+  //   icon: 'instagram',
+  // },
+  // {
+  //   label: 'Nordic Beauty on Facebook',
+  //   // href: 'https://www.facebook.com/nordicbeautydxb/',
+  //   icon: 'facebook',
+  // },
 ]
 
 export const COURSE_MENU = [
   {
-    label: 'Beauty Therapy Diploma',
-    href: '/courses/beauty-therapy-diploma',
+    label: 'Barbering Courses',
+    href: '/courses/barbering',
   },
   {
     label: 'Aesthetic Courses',
@@ -57,25 +57,26 @@ export const COURSE_MENU = [
     ],
   },
   {
+    label: 'Beauty Therapy Diploma',
+    href: '/courses/beauty-therapy-diploma',
+  },
+  {
     label: 'Body Therapy Courses',
     href: '/courses/body-therapy-massage-course',
   },
-  {
-    label: 'Barbering Courses',
-    href: '/courses/barbering',
-  },
+
 ]
 
 export const MAIN_NAV = [
   { label: 'Our Story', href: '/our-story' },
-  { label: 'Blog', href: '/blog' },
+  // { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' },
 ]
 
 export const QUICK_LINKS = [
   { label: 'Our Story', href: '/our-story' },
   { label: 'Academy', href: '/academy-courses' },
-  { label: 'Blog', href: '/blog' },
+  // { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' },
 ]
 
@@ -97,13 +98,13 @@ export const TECHNIQUES = [
 
 export const BASIC_COURSE = {
   title: 'BASIC',
-  note: 'Training material provided by Nordic Beauty.',
+  note: 'Training material provided by Crownora Beauty.',
   experience: 'Beginner/no previous experience needed.',
   duration: '10 days',
   internship: '20 days',
   prices: [
-    { label: 'KHDA', value: 'AED 15,000' },
-    { label: 'ITEC', value: 'AED 21,000' },
+    { label: 'Professional Barbering Certificate', value: '' },
+    { label: 'International Barbering Certificate', value: '' },
   ],
 }
 
@@ -113,7 +114,7 @@ export const ADVANCED_COURSE = {
   duration: '5 days',
   internship: '10 days',
   prices: [
-    { label: 'KHDA (UAE Diploma)', value: 'AED 7500' },
-    { label: 'ITEC (International Diploma)', value: 'AED 13,500' },
+    { label: 'Professional Barbering Certificate', value: '' },
+    { label: 'International Barbering Certificate', value: '' },
   ],
 }

@@ -1,3 +1,4 @@
+
 export const UPCOMING = [
   'beauty-therapy-diploma-ar',
   'hairstyling-course',
@@ -11,9 +12,9 @@ export const CATEGORIES = [
     title: 'HAIR Courses',
     href: '/courses/hair-courses',
     paragraphs: [
-      'We offer a comprehensive portfolio of hairdressing courses in Dubai designed to meet a variety of learning requirements in cutting, colouring, styling and bridal hair up styles all completed with local & internationally certified Certificates. From Beginner Hair Cutting Courses & Hair Colouring Courses In Dubai to the ultimate master courses.',
-      'Our international trainers have great experience and expertise in the hair and beauty industry and have been working with many celebrities such as Lindsey Lohan, Nicole Scherzinger, Nadine Njeim etc.',
-      'These barber courses in Dubai are customized, for further information please click here.',
+      'Crownora Barber Academy offers a range of hairdressing courses in Pakistan designed to meet different learning needs, including hair cutting, colouring, styling, and bridal hairstyling. From beginner hair cutting and colouring courses to advanced masterclasses, our programs focus on practical skills and professional development.',
+      'Our training focuses on building strong technical skills, creativity, hygiene, and confidence to help students prepare for opportunities in the hair and beauty industry.',
+      'Our courses can be tailored to different experience levels. For further information, please contact Crownora Barber Academy.',
     ],
   },
   {
@@ -21,9 +22,9 @@ export const CATEGORIES = [
     title: 'MAKEUP Courses',
     href: '/courses/make-up-courses',
     paragraphs: [
-      'We offer a full range of Advanced Makeup Courses within the field for makeup, whether you want to learn how to apply your own makeup or to become an internationally certified Makeup artist.',
-      'We start off by teaching you the fundamentals within makeup and how to work hygienically to give you a steady platform to succeed in your professional life. This will be followed by topics such as color knowledge, skin care, face shapes, anatomy, customer service and makeup application techniques among much more. At Nordic Beauty it is not only about teaching you the best techniques ang give you the highest knowledge but also to have a lot of fun, be creative, create opportunities for you in the fashion, media and makeup industry and give you the choice to one day work as a trainer or celebrity artist yourself.',
-      'These courses are customized, for further information please click here.',
+      'Crownora Barber Academy offers makeup training for learners who want to develop personal makeup skills or pursue a career as a professional makeup artist.',
+      'Students learn makeup fundamentals, hygiene, colour theory, skincare basics, face shapes, customer service, and makeup application techniques. Our training encourages creativity and helps students explore opportunities in bridal makeup, fashion, media, and professional beauty services.',
+      'Courses can be tailored to your goals and experience level. Contact us for further information.',
     ],
   },
   {
@@ -31,9 +32,9 @@ export const CATEGORIES = [
     title: 'NAIL Courses',
     href: '/courses/nail-tech',
     paragraphs: [
-      'The Nordic INTL. Beauty and Training Centre offers a wide selection of nails courses in Dubai. customized to fit every individual’s need, whether you are interested in learning for personal gain or to become a certified nail technician.',
-      'We welcome everyone at Nordic Beauty academy, independent of their previous knowledge or skill. We work with award winning and internationally certified educators that will carry out pre-assessment tests to be able to determine the most suitable course or program for you. We can also individually customize a private course tailormade to your needs. Our wide variety for nail courses start from basic manicure / pedicure but progress all the way to drill machine, nail extensions, Acrylic/Gel/ Poly gel Nail Extensions, Russian Manicure / Pedicure, Nail Art etc.',
-      'These courses are customized, for further information please click here.',
+      'Crownora Barber Academy offers nail training for learners interested in personal nail care or a professional career as a nail technician in Pakistan.',
+      'Whether you are a beginner or already have experience, training options can cover manicure and pedicure techniques, nail preparation, electric nail file use, nail extensions, acrylic, gel and polygel systems, Russian manicure techniques, and nail art, depending on the selected course.',
+      'Course content can be tailored to your learning needs. Contact us for further information about available programs.',
     ],
   },
   {
@@ -41,8 +42,9 @@ export const CATEGORIES = [
     title: 'LASH Courses',
     href: '/courses/lash-stylist',
     paragraphs: [
-      'One of the fastest growing professions in the beauty industry are eyelash extension technicians. At the Nordic international beauty and training center we offer short workshops and a long course covering the latest trends and methods when it comes to eyelash extensions. Whether you are a beginner or an already existing eyelash technician our courses are for anyone interested in becoming an eyelash extension specialist.',
-      'These courses are customized, for further information please click here.',
+      'Crownora Barber Academy provides lash training for beginners and existing beauty professionals who want to develop their eyelash extension skills.',
+      'Training may cover lash preparation, application techniques, hygiene, client care, and current lash styling methods, depending on the selected program.',
+      'Courses can be tailored to your experience and goals. Contact us for further information.',
     ],
   },
   {
@@ -50,20 +52,20 @@ export const CATEGORIES = [
     title: 'SKIN COURSES',
     href: '/courses/aesthetic',
     paragraphs: [
-      'The biggest organ on the human body is our skin. At Nordic beauty we will teach you everything you need to know about the skin, the body and the anatomy of our skin and body systems and how it is all connected to each other.',
-      'We provide seminars, basic courses up to grand master courses within the skin and body for everyone who would like to either know how to take care of your skin at home, for the individual who would like to start a professional career within the beauty and spa industry or for an existing therapist who would like to enhance and master her/his skills. All our trainers are CIDESCO, ITEC, VTCT certified and have a long experience in the skin, spa and beauty industry and have certified thousands of students around the world.',
-      'These courses are customized, for further information please click here.',
+      'Crownora Barber Academy offers skin and beauty education covering skincare fundamentals, skin anatomy, body systems, and professional skin care practices.',
+      'Learning options may range from introductory skincare courses to advanced beauty and spa training for aspiring therapists and existing professionals who want to improve their skills. Course content and trainer qualifications depend on the specific program.',
+      'Courses can be tailored to different learning needs. Contact Crownora Barber Academy for further information about available programs.',
     ],
   },
   {
     id: 'barber',
-    title: 'Barber Course',
+    title: 'Barber Courses',
     href: '/courses/barbering',
     paragraphs: [
-      'Nordic Beauty’s training philosophy is revolutionising the barbering and male hairdressing industry. We use a hands-on approach to develop the potential of barbers. We have our expert barber trainers provide you support with each cut and shave, so you get constant feedback to improve your skills.',
-      'Our barber courses and wet shave courses help you build a foundational knowledge of barbering, deconstruct each step, refine your technique and improve your cutting speed. We train at an advanced level.',
-      'We are experts at training complete beginners, career-switchers, and advanced stylists.',
-      'These courses are customized, for further information please click here.',
+      'Crownora Barber Academy is committed to developing practical barbering skills through hands-on learning. Students can build their skills in men’s haircuts, clipper techniques, styling, beard grooming, and shaving practices.',
+      'Our barber training focuses on foundational techniques, precision, sectioning, fading, beard shaping, hygiene, client consultation, and improving cutting confidence. Course content depends on the selected program and experience level.',
+      'Our learning pathways are designed for beginners, career changers, and experienced barbers looking to develop their techniques.',
+      'Contact Crownora Barber Academy for information about course options, schedules, and fees in Pakistan.',
     ],
   },
 ]

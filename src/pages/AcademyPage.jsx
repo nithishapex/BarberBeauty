@@ -10,7 +10,7 @@ export default function AcademyPage() {
   const upcoming = UPCOMING.map((slug) => library.courses.find((course) => course.slug === slug)).filter(Boolean)
 
   useEffect(() => {
-    document.title = 'Academy Courses | Nordic Beauty Academy'
+    document.title = 'Academy Courses | Crownora Beauty Academy'
   }, [])
 
   return (

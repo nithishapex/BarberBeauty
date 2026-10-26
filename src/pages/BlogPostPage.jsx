@@ -18,7 +18,7 @@ export default function BlogPostPage() {
   const post = library.posts.find((item) => item.slug === slug)
 
   useEffect(() => {
-    document.title = post ? `${post.title} | Nordic Beauty Academy` : 'Article not found | Nordic Beauty Academy'
+    document.title = post ? `${post.title} | Crownora Beauty Academy` : 'Article not found | Crownora Beauty Academy'
   }, [post])
 
   if (!post) {

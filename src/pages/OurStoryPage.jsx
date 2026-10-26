@@ -1,10 +1,11 @@
+
 import { useEffect } from 'react'
 import PageHero from '../components/PageHero'
 import { library } from '../data/library'
 
 export default function OurStoryPage() {
   useEffect(() => {
-    document.title = 'Our Story | Nordic Beauty Academy'
+    document.title = 'Our Story | Crownora Barber Academy'
   }, [])
 
   return (
@@ -12,68 +13,89 @@ export default function OurStoryPage() {
       <PageHero
         variant="story"
         title="Our Story"
-        text="How it all started;"
+        text="Our journey towards excellence in beauty and barber education."
         image={library.extras.story}
-        imageAlt="Nordic professional atmosphere"
+        imageAlt="Crownora Barber Academy Pakistan"
       />
+
       <section className="page-section">
         <div className="wrap prose">
           <p>
-            The siblings Selvana &amp; Mahmoud Chahine behind Nordic Beauty both have a background in
-            entrepreneurship rooted back in Sweden.
+            The siblings Ayesha Khan and Ahmed Khan behind Crownora Barber Academy
+            share a passion for entrepreneurship, education, creativity, and the
+            beauty and grooming industry in Pakistan.
           </p>
-          <h2>“Selvana Chahine, the Beauty Master”</h2>
+
+          <h2>“Ayesha Khan — The Beauty Educator”</h2>
+
           <p>
-            Selvana, the Education Director started her aesthetic and beauty career at the age of 19.
-            Through-out her career Selvana achieved over 40 international certificates, awards and diplomas
-            including the “train the trainer” license and international ambassador license.
+            Ayesha, our Education Director, began her career in the beauty and
+            aesthetics industry at an early age. Throughout her career, she
+            developed expertise in professional beauty treatments, education,
+            customer service, and training.
           </p>
+
           <p>
-            She decided to open her first beauty academy in Sweden at the age of 23. Over the years she
-            successfully graduated hundreds of students within the aesthetic and beauty field across
-            Scandinavia, Europe and Middle east / GCC.
+            Her vision is to help aspiring professionals build successful careers
+            through quality education, practical training, and industry-focused
+            learning.
           </p>
-          <h2>Designing Beauty</h2>
+
+          <h2>Designing Excellence</h2>
+
           <p>
-            Mahmoud graduated his Master in design from Turin, Italy and quickly fell in love with design and
-            business development. In his early 20´s he established his first company within product
-            development and got his products selling across Europe. He continued his road in the business
-            development field connecting businesses between Europe and GCC.
+            Ahmed Khan brings a passion for design, entrepreneurship, and
+            business development. He believes that creativity, professional
+            standards, and strong business skills are essential to building
+            successful businesses in the beauty and grooming industry.
           </p>
-          <h2>“Nordics in Dubai”</h2>
+
+          <h2>Crownora Barber Academy in Pakistan</h2>
+
           <p>
-            in 2014 Selvana decided to move to Dubai where she worked an opportunity to work as a education
-            ambassador for a highly reputable leading international company, with over 40 international brands
-            within their portfolio. She extensively travelled through the Middle East and GCC executing
-            various levels of trainings such as, skincare &amp; body therapy, makeup artistry aesthetic
-            skincare, sales and customer service etc.
+            Crownora Barber Academy was established with a vision to provide
+            professional education and practical training for people who want
+            to build careers in barbering, hairstyling, beauty, and grooming.
+            Our focus is on developing practical skills, confidence, and
+            professional standards that prepare students for the workplace.
           </p>
-          <h2>“A beauty hub is born;</h2>
+
+          <h2>A Vision for Professional Education</h2>
+
           <p>
-            During Selvanas career in the middle east and GCC she recognized the challenges salon, Clinics
-            and spa owners are facing daily and the qualifications and proper education that is needed in GCC
-            to enhance the level of Standard and achieve successful and fruitful business.
+            We understand the challenges faced by salons, barbershops, beauty
+            clinics, and grooming businesses. Professional skills, practical
+            experience, and quality education are important for improving
+            service standards and building successful careers.
           </p>
+
           <p>
-            Being not only a trained professional and educator in the industry, but also a customer, she
-            realized how to breach these, through service, education and training, passing on all her
-            knowledge and expertise!
+            At Crownora Barber Academy, we aim to bridge the gap between
+            learning and professional practice by sharing knowledge, providing
+            hands-on training, and helping students develop the skills needed
+            to succeed in the industry.
           </p>
+
           <p>
-            Not only being siblings, but also close friends and sharing the passion for Entrepreneurship,
-            creativity / design, beauty and business development both Selvana and Mahmoud wanted to establish
-            a unique concept by gathering their expertise gained throughout the years and unite United Arab
-            emirates and Scandinavia under one roof.
+            Our academy brings together a passion for creativity, education,
+            beauty, barbering, and business development. We are committed to
+            creating a supportive learning environment where students can
+            discover their potential and work towards their career goals.
           </p>
+
           <p>
-            The main goal is to provide the right tools and expertise to improve overall standards and we
-            believe that education is the key to success.
+            Our main goal is to provide students with the right tools,
+            knowledge, and practical expertise to improve professional
+            standards. We believe education is a key foundation for success.
           </p>
+
           <p>
-            Our mission as an academy is to provide wide opportunities to achieve high quality hair &amp;
-            beauty education for individuals who wants to start a career in the beauty industry, existing
-            beauty professionals and corporate solutions. We provide the most important tools to enhance
-            individuals and company to reach a 5-star level.
+            Our mission is to provide quality barbering, hairstyling, and
+            beauty education for individuals starting their careers, existing
+            professionals seeking to improve their skills, and businesses
+            looking for professional training solutions. We aim to help
+            individuals and businesses achieve high standards of service,
+            professionalism, and customer satisfaction.
           </p>
         </div>
       </section>

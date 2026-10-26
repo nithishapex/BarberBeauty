@@ -8,11 +8,12 @@ export default function Footer() {
       <div className="wrap footer-grid">
         <div className="footer-brand">
           <Link to={HOME_PATH}>
-            <img src="/images/logo-light.png" alt="Nordic Beauty" width="113" height="113" />
+            <img src="/images/logo-light.png" alt="Crownora Barber Academy"
+              width="160" />
           </Link>
           <p className="copy">
-            © 2020 Nordic Beauty.{' '}
-            <a href={SEO_CREDIT_URL}>SEO</a> By Brandcare Digital
+            © 2020 Crownora Barber Academy.{' '}
+            {/* <a href={SEO_CREDIT_URL}>SEO</a> By APEX */}
           </p>
         </div>
 

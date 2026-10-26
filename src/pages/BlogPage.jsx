@@ -25,7 +25,7 @@ export default function BlogPage() {
   const shown = posts.slice(0, visible)
 
   useEffect(() => {
-    document.title = 'Blog | Nordic Beauty Academy'
+    document.title = 'Blog | Crownora Beauty Academy'
   }, [])
 
   function subscribe(event) {

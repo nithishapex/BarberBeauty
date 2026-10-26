@@ -147,14 +147,14 @@ export default function HomePage() {
   const reduced = useReducedMotion()
 
   useEffect(() => {
-    document.title = 'DHA Approved Beauty Academy in Dubai, UAE | Nordic Beauty'
+    document.title = 'Crownora Barber Academy'
   }, [])
 
   useEffect(() => {
     const video = document.querySelector('.home-hero-video')
     if (!video) return
     if (reduced) video.pause()
-    else video.play().catch(() => {})
+    else video.play().catch(() => { })
   }, [reduced])
 
   return (
@@ -172,7 +172,7 @@ export default function HomePage() {
         </video>
         <div className="home-hero-shade" />
         <div className="wrap home-hero-copy">
-          <h1>THE LEADING DHA APPROVED INTERNATIONAL BEAUTY ACADEMY IN UAE</h1>
+          <h1>PAKISTAN’S PREMIER INTERNATIONAL BARBER & BEAUTY ACADEMY</h1>
           <Link className="btn btn-white" to="/contact">
             Academy
           </Link>
@@ -224,7 +224,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
+      {/* 
       <section className="page-section" aria-labelledby="instagram-title">
         <div className="wrap">
           <h2 id="instagram-title" className="section-title center">
@@ -242,28 +242,32 @@ export default function HomePage() {
             </a>
           </p>
         </div>
-      </section>
+      </section> */}
 
       <section className="page-section" aria-labelledby="home-story-title">
         <div className="wrap story-band">
-          <img src="/images/home/story.jpg" alt="Nordic professional atmosphere" />
+          <img src="/images/home/story.jpg" alt="Crownora Barber Academy professional barber training" />
           <div>
             <h2 id="home-story-title">Our Story</h2>
-            <p>How it all started;</p>
+            <p>Crafting Skills. Building Careers.</p>
             <p>
-              The siblings Selvana & Mahmoud Chahine behind Nordic Beauty both have a background in
-              entrepreneurship rooted back in Sweden.
+              Crownora Barber Academy is dedicated to shaping the next
+              generation of professional barbers through practical
+              training, modern techniques, and industry-focused education.
             </p>
             <p>
-              “Selvana Chahine, the Beauty Master”
+              <strong>Excellence in Barbering Education</strong>
               <br />
-              Selvana, the Education Director started her aesthetic and beauty career at the age of 19.
-              Through-out her career <strong>Selvana achieved over 40 international certificates, awards, and diplomas including the “train the trainer” license and </strong>
-              international ambassador license.
+              At Crownora, we believe barbering is more than a profession;
+              it is an art. Our academy focuses on developing essential
+              barbering skills, precision cutting, modern fades, beard
+              grooming, and professional client care in a supportive
+              learning environment.
             </p>
-            <Link className="btn btn-primary" to="/our-story">
+
+            {/* <Link className="btn btn-primary" to="/our-story">
               Read More
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
@@ -272,12 +276,24 @@ export default function HomePage() {
         <div className="wrap success-band">
           <div>
             <h2 id="success-title">YOUR SUCCESS IS OUR SUCCESS!</h2>
-            <p>Step into the world of beauty and wellness in Nordic Beauty academy.</p>
             <p>
-              Every person entering our academy is entering their new home and we ensure you a cosy, happy, and
-              professional atmosphere.
+              Step into the world of professional barbering with
+              Crownora Barber Academy.
             </p>
-            <p>Here in Nordic Beauty our team, trainers, students, and clients are one big family.</p>
+
+            <p>
+              Every student who joins Crownora becomes part of our
+              academy family. We provide a welcoming, supportive, and
+              professional learning environment where students can
+              develop their skills, confidence, and creativity.
+            </p>
+
+            <p>
+              At Crownora Barber Academy, our trainers and students
+              work together to master modern haircuts, precision fades,
+              beard styling, and professional grooming techniques.
+              Your journey to a successful barbering career starts here.
+            </p>
             <Link className="btn btn-primary" to="/contact">
               Reach Us
             </Link>
@@ -296,10 +312,10 @@ export default function HomePage() {
         id="home-enquiry"
         title="Send Message"
         description=""
-        lead="Nordic Beauty enquiry"
+        lead="Crownora barber academy enquiry"
       />
 
-      <section className="page-section" aria-labelledby="partners-title">
+      {/* <section className="page-section" aria-labelledby="partners-title">
         <div className="wrap">
           <h2 id="partners-title" className="section-title center">
             NORDIC BEAUTY IN PARTNERSHIP WITH
@@ -312,7 +328,7 @@ export default function HomePage() {
             ))}
           </ul>
         </div>
-      </section>
+      </section> */}
 
       <section className="page-section" aria-labelledby="reviews-title">
         <div className="wrap">

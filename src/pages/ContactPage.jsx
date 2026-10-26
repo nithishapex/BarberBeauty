@@ -10,7 +10,7 @@ const MAP_SRC =
 
 export default function ContactPage() {
   useEffect(() => {
-    document.title = 'Contact | Nordic Beauty Academy'
+    document.title = 'Contact | Crownora Beauty Academy'
   }, [])
 
   return (
@@ -50,7 +50,7 @@ export default function ContactPage() {
               </p>
             </article>
           </div>
-          <iframe className="map-frame" title="Nordic Beauty Academy on Google Maps" src={MAP_SRC} loading="lazy" />
+          <iframe className="map-frame" title="Crownora Beauty Academy on Google Maps" src={MAP_SRC} loading="lazy" />
         </div>
       </section>
       <EnquiryForm

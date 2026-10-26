@@ -1,43 +1,58 @@
+
 import { CATALOGUE_URL } from '../data/site'
 
 export default function CourseArticle() {
   return (
     <section className="page-section" id="about" aria-labelledby="about-title">
       <div className="wrap prose">
-        <h2 id="about-title">Your Go-to Platform for The Best Barber Course in Dubai</h2>
+        <h2 id="about-title">
+          Your Go-To Academy for Professional Barber Courses in Pakistan
+        </h2>
+
         <p>
-          Are you looking forward to joining a barber course? Look no further than Nordic Beauty for an
-          exceptional, career-oriented course. While you can attend the theory classes at your own pace and
-          convenience, you’ll have to follow the practical part in person. Nordic Beauty provides the best{' '}
-          <strong>barber course in Dubai</strong>, consisting of online classes and classroom-based classes;
-          barbers can also deliver lessons at beauty and barber Institutes.
+          Are you looking to start a career in barbering? Crownora Barber
+          Academy offers career-focused training designed to help students
+          develop practical skills and professional confidence. Our courses
+          focus on barbering fundamentals, haircutting, hairstyling, and
+          grooming techniques. Practical training availability depends on
+          the selected course.
         </p>
+
         <p>
-          You can learn about first aid requirements, development of lesson plans, ways to manage classroom
-          assignments, and setting objectives. Most of these barber courses also deal with sanitation and
-          hygiene standards. You will learn about sanitation, cleanliness, and safety standards necessary
-          for barbering and cosmetology environments.
+          Students can learn about professional hygiene, sanitation,
+          lesson planning where applicable, classroom responsibilities,
+          and workplace safety. Maintaining a clean and safe environment
+          is an essential part of professional barbering and grooming.
         </p>
+
         <p>
-          You will also learn ways to examine the hazards of serious infections, diseases like HIV, and poor
-          sanitation. Due to the outbreak of covid-19, barbers must take extra precautions. For example, they
-          must sanitize their hands and hair cutting accessories after every use.
+          Our training emphasizes safe working practices, including proper
+          cleaning and disinfection of barbering tools and equipment.
+          Students learn the importance of following appropriate hygiene
+          procedures to help protect themselves and their clients.
         </p>
+
         <p>
-          You will also be required to use gloves when coming in contact with their clients. When you enroll
-          in haircutting and hairstyling courses, you can learn about the basic steps involved in men’s
-          hairstyling and haircutting.
+          Haircutting and hairstyling training introduces students to
+          essential techniques for men's haircuts, styling, and grooming.
+          Course content varies according to the selected program and
+          the student's experience level.
         </p>
+
         <p>
-          Besides, these courses also cover the basic steps required to properly handle tools such as razors,
-          clippers, combs, and scissors. The course will also introduce you to hairstyling tips at the
-          beginners’ level.
+          Students can develop familiarity with professional tools such
+          as clippers, scissors, combs, and razors, learning their
+          appropriate use and care as part of barbering practice.
         </p>
+
         <p>
-          With a customer-centric course, barbers can learn ways to communicate with their customers. It
-          increases the likelihood of the consumer’s return in the future. The topics included are service
-          pricing, communication skills, and resolving disputes.
+          Professional barbering also involves excellent customer service.
+          Students can develop communication skills, learn to understand
+          client preferences, and build positive client relationships.
+          Business-related topics may include service pricing, client
+          consultations, and handling customer concerns.
         </p>
+
         <div className="catalogue" id="catalogue">
           <a
             className="btn btn-primary catalogue-btn"
@@ -45,7 +60,7 @@ export default function CourseArticle() {
             target="_blank"
             rel="noreferrer noopener"
           >
-            Check Out Our Academy Courses Catalogue
+            Explore Crownora Academy Courses
           </a>
         </div>
       </div>

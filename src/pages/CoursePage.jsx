@@ -10,8 +10,8 @@ export default function CoursePage() {
 
   useEffect(() => {
     document.title = course
-      ? `${course.title} | Nordic Beauty Academy`
-      : 'Course not found | Nordic Beauty Academy'
+      ? `${course.title} | Crownora Beauty Academy`
+      : 'Course not found | Crownora Beauty Academy'
   }, [course])
 
   if (!course) {

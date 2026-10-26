@@ -140,7 +140,7 @@ export default function EnquiryForm({
                   Your message is ready to send
                 </h3>
                 <p>
-                  This page does not send enquiries to Nordic Beauty. Use email or WhatsApp to deliver the
+                  This page does not send enquiries to Crownora Barber Academy. Use email or WhatsApp to deliver the
                   message yourself.
                 </p>
                 <pre className="preview-box">{text}</pre>
@@ -258,7 +258,7 @@ export default function EnquiryForm({
                   </button>
                 </div>
                 <p className="form-note">
-                  This page cannot deliver the form to Nordic Beauty. After you continue, you can send it by
+                  This page cannot deliver the form to Crownora Barber Academy. After you continue, you can send it by
                   email or WhatsApp.
                 </p>
               </form>

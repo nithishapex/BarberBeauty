@@ -80,7 +80,7 @@ export default function Header() {
 
   useEffect(() => {
     function onKeyDown(event) {
-        if (event.key === 'Escape') {
+      if (event.key === 'Escape') {
         window.clearTimeout(closeTimer.current)
         setCoursesOpen(false)
         setMenuOpen(false)
@@ -112,7 +112,8 @@ export default function Header() {
       </a>
       <div className="wrap header-bar">
         <Link className="brand" to={HOME_PATH}>
-          <img src="/images/logo-light.png" alt="Nordic Beauty" width="113" height="113" />
+          <img src="/images/logo-light.png" alt="Crownora Barber Academy"
+            width="160" />
         </Link>
 
         <nav className="desktop-nav" aria-label="Primary">

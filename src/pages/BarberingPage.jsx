@@ -6,7 +6,7 @@ import ReadyToStart from '../components/ReadyToStart'
 
 export default function BarberingPage() {
   useEffect(() => {
-    document.title = "Barbering Courses in Dubai | Barber's Course & Diploma | Nordic Beauty Academy"
+    document.title = "Barbering Courses in Pakistan | Barber's Course & Diploma | Crownora Beauty Academy"
   }, [])
 
   return (
