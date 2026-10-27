@@ -1,7 +1,7 @@
 export const HOME_PATH = '/'
 
 export const CATALOGUE_URL =
-  'https://www.nordicbtc.ae/wp-content/uploads/2022/08/Nordic-Beauty-2022.pdf'
+  ''
 
 export const CONTACT = {
   phoneDisplay: '+971 4 221 15 21',

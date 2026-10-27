@@ -28,7 +28,7 @@ export const INSTAGRAM = [1, 2, 3, 4, 5, 6, 7, 8].map((number) => ({
   alt: `Crownora Barber Academy ${number}`,
 }))
 
-export const CAMPUS = Array.from({ length: 21 }, (_, index) => ({
+export const CAMPUS = Array.from({ length: 11 }, (_, index) => ({
   src: `/images/home/campus-${index + 1}.jpg`,
   alt: `Crownora Barber Academy ${index + 1}`,
 }))

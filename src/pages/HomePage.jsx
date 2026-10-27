@@ -159,7 +159,7 @@ export default function HomePage() {
 
   return (
     <>
-      <section className="home-hero" aria-label="Introduction">
+      {/* <section className="home-hero" aria-label="Introduction">
         <video
           className="home-hero-video"
           autoPlay={!reduced}
@@ -177,6 +177,56 @@ export default function HomePage() {
             Academy
           </Link>
         </div>
+        <div className="wrap home-facts">
+          <div>
+            <span>Contact</span>
+            <p>
+              <strong>
+                T: <a href={CONTACT.phoneHref}>+971 4 221 1521</a>
+              </strong>
+              <br />
+              <strong>
+                <a href={CONTACT.emailHref}>info@nordicbtc.com</a>
+              </strong>
+            </p>
+          </div>
+          <div>
+            <span>Open Hours</span>
+            <p>
+              <strong>Monday– Friday</strong>
+              <br />
+              <strong>10.00 am – 7.00 pm</strong>
+            </p>
+          </div>
+          <div>
+            <span>Location</span>
+            <p>
+              <strong>Al Wasl road, Villa A1053,</strong>
+              <br />
+              <strong>Jumeirah 3, dubai UAE</strong>
+            </p>
+          </div>
+        </div>
+      </section> */}
+
+      <section className="home-hero" aria-label="Introduction">
+        <img
+          className="home-hero-video"
+          src="/images/home/hero-banner.png"
+          alt=""
+          aria-hidden="true"
+          fetchPriority="high"
+        />
+
+        <div className="home-hero-shade" />
+
+        <div className="wrap home-hero-copy">
+          <h1>PAKISTAN’S PREMIER INTERNATIONAL BARBER & BEAUTY ACADEMY</h1>
+          <Link className="btn btn-white" to="/contact">
+            Academy
+          </Link>
+        </div>
+
         <div className="wrap home-facts">
           <div>
             <span>Contact</span>

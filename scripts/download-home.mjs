@@ -15,7 +15,7 @@ const files = [
   ['https://www.nordicbtc.ae/wp-content/uploads/2024/10/448889729_18082432006468954_5935133663690191904_n.jpg', 'ig-6.jpg'],
   ['https://www.nordicbtc.ae/wp-content/uploads/2024/10/450202947_18083852161468954_4782591872943593921_n.jpg', 'ig-7.jpg'],
   ['https://www.nordicbtc.ae/wp-content/uploads/2024/10/438302514_18079689550468954_3836317228780870209_n.jpg', 'ig-8.jpg'],
-  ['https://www.nordicbtc.ae/wp-content/uploads/2022/01/1-1.jpg', 'campus-1.jpg'],
+  // ['https://www.nordicbtc.ae/wp-content/uploads/2022/01/1-1.jpg', 'campus-1.jpg'],
   ['https://www.nordicbtc.ae/wp-content/uploads/2022/01/2-1.jpg', 'campus-2.jpg'],
   ['https://www.nordicbtc.ae/wp-content/uploads/2022/01/3.jpg', 'campus-3.jpg'],
   ['https://www.nordicbtc.ae/wp-content/uploads/2022/01/4.jpg', 'campus-4.jpg'],

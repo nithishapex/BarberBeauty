@@ -107,9 +107,9 @@ export default function Header() {
 
   return (
     <header className="site-header">
-      <a className="skip" href="#main">
+      {/* <a className="skip" href="#main">
         Skip to content
-      </a>
+      </a> */}
       <div className="wrap header-bar">
         <Link className="brand" to={HOME_PATH}>
           <img src="/images/logo-light.png" alt="Crownora Barber Academy"
