@@ -1,10 +1,14 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
 import AcademyPage from './pages/AcademyPage'
 import BarberingPage from './pages/BarberingPage'
 import HomePage from './pages/HomePage'
 import BlogPage from './pages/BlogPage'
 import BlogPostPage from './pages/BlogPostPage'
+import CertificateAccessPage from './pages/CertificateAccessPage'
+import CertificateDetailsPage from './pages/CertificateDetailsPage'
+import CertificateReviewPage from './pages/CertificateReviewPage'
+import CertificateVerifyPage from './pages/CertificateVerifyPage'
 import ContactPage from './pages/ContactPage'
 import CoursePage from './pages/CoursePage'
 import OurStoryPage from './pages/OurStoryPage'
@@ -35,6 +39,12 @@ export default function App() {
           <Route path="/blog/:slug" element={<BlogPostPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/academy-courses" element={<AcademyPage />} />
+          <Route path="/certificates/access" element={<CertificateAccessPage />} />
+          <Route path="/my-certificates" element={<Navigate to="/certificates/access" replace />} />
+          <Route path="/certificates/verify/:certificateId" element={<CertificateVerifyPage />} />
+          <Route path="/certificates/review/:certificateId" element={<CertificateReviewPage />} />
+          <Route path="/certificates/:certificateId" element={<CertificateDetailsPage />} />
+          <Route path="/certificates" element={<Navigate to="/certificates/access" replace />} />
           <Route path="*" element={<MissingPage />} />
         </Routes>
       </Layout>

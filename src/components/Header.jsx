@@ -167,16 +167,24 @@ export default function Header() {
             </div>
           </div>
 
-          {MAIN_NAV.map((item) => (
-            <NavLink
-              key={item.href}
-              to={item.href}
-              className={({ isActive }) => `nav-link${isActive ? ' is-current' : ''}`}
-              onClick={closeCourses}
-            >
-              {item.label}
-            </NavLink>
-          ))}
+          {MAIN_NAV.map((item) => {
+            const current = item.activePrefix
+              ? item.activePrefix.some(
+                  (prefix) => location.pathname === prefix || location.pathname.startsWith(`${prefix}/`),
+                )
+              : location.pathname === item.href
+            return (
+              <Link
+                key={item.href}
+                to={item.href}
+                className={`nav-link${current ? ' is-current' : ''}`}
+                aria-current={current ? 'page' : undefined}
+                onClick={closeCourses}
+              >
+                {item.label}
+              </Link>
+            )
+          })}
         </nav>
 
         <div className="header-actions">
@@ -253,11 +261,24 @@ export default function Header() {
               </div>
             )}
 
-            {MAIN_NAV.map((item) => (
-              <NavLink key={item.href} className="mobile-link" to={item.href} onClick={closeMobile}>
-                {item.label}
-              </NavLink>
-            ))}
+            {MAIN_NAV.map((item) => {
+              const current = item.activePrefix
+                ? item.activePrefix.some(
+                    (prefix) => location.pathname === prefix || location.pathname.startsWith(`${prefix}/`),
+                  )
+                : location.pathname === item.href
+              return (
+                <Link
+                  key={item.href}
+                  className="mobile-link"
+                  to={item.href}
+                  aria-current={current ? 'page' : undefined}
+                  onClick={closeMobile}
+                >
+                  {item.label}
+                </Link>
+              )
+            })}
 
             <Link className="btn btn-primary mobile-cta" to="/contact#message" onClick={closeMobile}>
               Leave request

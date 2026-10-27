@@ -69,6 +69,7 @@ export const COURSE_MENU = [
 
 export const MAIN_NAV = [
   { label: 'Our Story', href: '/our-story' },
+  { label: 'My Certificates', href: '/certificates/access', activePrefix: ['/certificates', '/my-certificates'] },
   // { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' },
 ]
@@ -76,6 +77,7 @@ export const MAIN_NAV = [
 export const QUICK_LINKS = [
   { label: 'Our Story', href: '/our-story' },
   { label: 'Academy', href: '/academy-courses' },
+  { label: 'My Certificates', href: '/certificates/access', activePrefix: ['/certificates', '/my-certificates'] },
   // { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' },
 ]
