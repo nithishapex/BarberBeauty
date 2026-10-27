@@ -150,12 +150,12 @@ export default function HomePage() {
     document.title = 'Crownora Barber Academy'
   }, [])
 
-  useEffect(() => {
-    const video = document.querySelector('.home-hero-video')
-    if (!video) return
-    if (reduced) video.pause()
-    else video.play().catch(() => { })
-  }, [reduced])
+  // useEffect(() => {
+  //   const video = document.querySelector('.home-hero-video')
+  //   if (!video) return
+  //   if (reduced) video.pause()
+  //   else video.play().catch(() => { })
+  // }, [reduced])
 
   return (
     <>
