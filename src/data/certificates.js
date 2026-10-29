@@ -41,7 +41,7 @@ export const CERTIFICATES = [
     certificateImage: '/images/certificates/barbering.png',
     imageWidth: 498,
     imageHeight: 658,
-    qr: { x: 426, y: 534, size: 40 },
+    qr: { x: 392, y: 518, size: 96 },
     summary:
       'This training program was conducted at Crownora Barber Academy, Pakistan and focuses on professional barbering techniques, men\'s grooming, hygiene and client care.',
     skills: [
@@ -65,7 +65,7 @@ export const CERTIFICATES = [
     certificateImage: '/images/certificates/hair-styling.png',
     imageWidth: 509,
     imageHeight: 323,
-    qr: { x: 342, y: 246, size: 38 },
+    qr: { x: 330, y: 206, size: 104 },
     summary:
       'This course was conducted at Crownora Barber Academy, Pakistan and covers advanced hairstyling techniques, modern grooming methods and professional client care.',
     skills: [
@@ -88,7 +88,7 @@ export const CERTIFICATES = [
     certificateImage: '/images/certificates/advanced-barbering.png',
     imageWidth: 509,
     imageHeight: 334,
-    qr: { x: 404, y: 240, size: 40 },
+    qr: { x: 388, y: 206, size: 108 },
     summary:
       'This course was conducted at Crownora Barber Academy, Pakistan and focuses on beard styling, facial grooming, skincare and professional client consultation.',
     skills: ['Beard Styling', 'Facial Grooming', 'Skincare Basics', 'Client Consultation'],
