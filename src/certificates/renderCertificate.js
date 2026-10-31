@@ -1,7 +1,7 @@
 import QRCode from 'qrcode'
 import { certificateVerifyUrl } from '../data/certificates'
 
-const OUTPUT_SCALE = 4
+const OUTPUT_SCALE = 2
 
 function loadImage(src) {
   return new Promise((resolve, reject) => {

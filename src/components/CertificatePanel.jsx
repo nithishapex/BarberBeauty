@@ -9,20 +9,21 @@ import {
 } from '../data/certificates'
 import { downloadCertificate } from '../certificates/downloadCertificate'
 import { useCertificateImage } from '../certificates/useCertificateImage'
-import { reviewsForCertificate } from '../certificates/reviews'
-
 export default function CertificatePanel({ certificate }) {
   const [downloadError, setDownloadError] = useState('')
+  const [downloading, setDownloading] = useState(false)
   const [imageError, setImageError] = useState(false)
   const imageSrc = useCertificateImage(certificate)
-  const reviews = reviewsForCertificate(certificate.id)
 
   async function onDownload() {
     setDownloadError('')
+    setDownloading(true)
     try {
       await downloadCertificate(certificate)
     } catch {
-      setDownloadError('The certificate image could not be downloaded.')
+      setDownloadError('The certificate could not be downloaded.')
+    } finally {
+      setDownloading(false)
     }
   }
 
@@ -53,8 +54,16 @@ export default function CertificatePanel({ certificate }) {
               <dd>{certificate.id}</dd>
             </div>
             <div>
-              <dt>Course</dt>
-              <dd>{certificate.courseName}</dd>
+              <dt>Nationality</dt>
+              <dd>{certificate.nationality}</dd>
+            </div>
+            <div>
+              <dt>Date of birth</dt>
+              <dd>{certificate.dateOfBirth}</dd>
+            </div>
+            <div>
+              <dt>Passport No.</dt>
+              <dd>{certificate.passportNumber}</dd>
             </div>
             <div>
               <dt>Academy</dt>
@@ -72,17 +81,19 @@ export default function CertificatePanel({ certificate }) {
             </div>
           </dl>
           <p>{certificate.summary}</p>
-          <div>
-            <h2>Skills</h2>
-            <ul className="cert-skills">
-              {certificate.skills.map((skill) => (
-                <li key={skill}>{skill}</li>
-              ))}
-            </ul>
-          </div>
+          {certificate.skills?.length ? (
+            <div>
+              <h2>Skills</h2>
+              <ul className="cert-skills">
+                {certificate.skills.map((skill) => (
+                  <li key={skill}>{skill}</li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
           <div className="cert-actions">
-            <button type="button" className="cert-btn cert-btn-gold" onClick={onDownload}>
-              Download Certificate
+            <button type="button" className="cert-btn cert-btn-gold" onClick={onDownload} disabled={downloading}>
+              {downloading ? 'Preparing PDF…' : 'Download PDF'}
             </button>
             {certificate.reviewEnabled ? (
               <Link className="cert-btn" to={certificateReviewPath(certificate.id)}>

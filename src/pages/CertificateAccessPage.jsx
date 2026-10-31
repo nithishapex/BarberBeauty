@@ -3,15 +3,15 @@ import { useNavigate } from 'react-router-dom'
 import { authenticateStudent, certificatesForStudent, certificateVerifyPath } from '../data/certificates'
 import '../certificates.css'
 
-const INVALID = 'Those details do not match a student record. Check the Student ID and private access code, then try again.'
+const INVALID =
+  'Those details do not match a certificate. Check the Student ID and date of birth, then try again.'
 
 export default function CertificateAccessPage() {
   const navigate = useNavigate()
   const studentField = useId()
   const codeField = useId()
-  const [studentId, setStudentId] = useState('CBA-STU-2026-00842')
-  const [accessCode, setAccessCode] = useState('K7P9-X4M2')
-  const [showCode, setShowCode] = useState(false)
+  const [studentId, setStudentId] = useState('CBA-STU-2026-0001')
+  const [accessCode, setAccessCode] = useState('1996-01-01')
   const [error, setError] = useState('')
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function CertificateAccessPage() {
     const id = studentId.trim()
     const code = accessCode.trim()
     if (!id || !code) {
-      setError('Enter both your Student ID and private access code.')
+      setError('Enter both your Student ID and date of birth.')
       return
     }
     const student = authenticateStudent(id, code)
@@ -45,12 +45,8 @@ export default function CertificateAccessPage() {
       <div className="wrap cert-access">
         <p className="cert-kicker">Crownora Barber Academy</p>
         <h1>Access My Certificates</h1>
-        <p className="cert-lead">Enter your Student ID and private access code to view your certificates.</p>
-        <p className="cert-note">
-          This is simulated access for a static demo. It is not secure sign-in. The private access code is checked
-          in this browser and is not saved after you continue. Anyone can read the demonstration codes in the page
-          source.
-        </p>
+        <p className="cert-lead">Enter your Student ID and date of birth to view your certificate.</p>
+        <p className="cert-note">The password for a certificate is the date of birth. Choose it from the calendar.</p>
         <form className="cert-panel cert-form" onSubmit={onSubmit} noValidate>
           <div>
             <label htmlFor={studentField}>Student ID</label>
@@ -69,31 +65,21 @@ export default function CertificateAccessPage() {
             />
           </div>
           <div>
-            <label htmlFor={codeField}>Private Access Code</label>
-            <div className="cert-secret">
-              <input
-                id={codeField}
-                name="accessCode"
-                type={showCode ? 'text' : 'password'}
-                value={accessCode}
-                autoComplete="off"
-                spellCheck="false"
-                aria-invalid={error ? 'true' : undefined}
-                aria-describedby={error ? 'access-error' : undefined}
-                onChange={(event) => {
-                  setAccessCode(event.target.value)
-                  if (error) setError('')
-                }}
-              />
-              <button
-                type="button"
-                className="cert-btn cert-btn-ghost"
-                aria-pressed={showCode}
-                onClick={() => setShowCode((current) => !current)}
-              >
-                {showCode ? 'Hide' : 'Show'}
-              </button>
-            </div>
+            <label htmlFor={codeField}>Date of Birth</label>
+            <input
+              id={codeField}
+              name="dateOfBirth"
+              type="date"
+              value={accessCode}
+              autoComplete="bday"
+              max="2015-12-31"
+              aria-invalid={error ? 'true' : undefined}
+              aria-describedby={error ? 'access-error' : undefined}
+              onChange={(event) => {
+                setAccessCode(event.target.value)
+                if (error) setError('')
+              }}
+            />
           </div>
           {error ? (
             <p id="access-error" className="cert-error" role="alert">
@@ -104,24 +90,6 @@ export default function CertificateAccessPage() {
             View Certificate
           </button>
         </form>
-        {/* <section className="cert-panel cert-demo" aria-labelledby="demo-access">
-          <h2 id="demo-access">Demonstration credentials</h2>
-          <p className="cert-note">Use one student at a time. Each login shows only that student's certificates.</p>
-          <ul className="cert-demo-list">
-            {STUDENTS.map((student) => (
-              <li key={student.studentId}>
-                <strong>{student.name}</strong>
-                <span>Student ID {student.studentId}</span>
-                <span>Access code {student.accessCode}</span>
-              </li>
-            ))}
-          </ul>
-          <p className="cert-note">
-            Noor Ahmed has no certificates yet, so that login shows the empty state.{' '}
-            <Link to="/certificates/verify/CBA-BC-2026-0148">QR verification</Link> opens one certificate without
-            these codes.
-          </p>
-        </section> */}
       </div>
     </div>
   )

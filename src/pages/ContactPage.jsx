@@ -6,7 +6,7 @@ import { MailIcon, PhoneIcon, PinIcon } from '../components/Icons'
 import { CONTACT } from '../data/site'
 
 const MAP_SRC =
-  'https://maps.google.com/maps?q=1053%20Al%20Wasl%20Road%2C%20Jumeirah%2C%20Dubai%2C%20UAE&t=m&z=13&output=embed&iwloc=near'
+  'https://maps.google.com/maps?q=Saddique%20Trade%20Center%20Main%20Boulevard%20Gulberg%202%20Lahore%20Pakistan&t=m&z=15&output=embed&iwloc=near'
 
 export default function ContactPage() {
   useEffect(() => {
@@ -29,7 +29,7 @@ export default function ContactPage() {
                 <PhoneIcon />
                 <span>
                   T:{' '}
-                  <a href={CONTACT.phoneHref}>971 4 221 15 21</a>
+                  <a href={CONTACT.phoneHref}>{CONTACT.phoneDisplay}</a>
                 </span>
               </p>
               <p>
@@ -39,8 +39,7 @@ export default function ContactPage() {
             </article>
             <article>
               <CardHeader title="Hours" />
-              <p>Monday– Friday</p>
-              <p>10.00 am – 7.00 pm</p>
+              <p>{CONTACT.hours}</p>
             </article>
             <article>
               <CardHeader title="Location" />

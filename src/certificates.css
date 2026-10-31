@@ -99,6 +99,7 @@
 
 .cert-search input,
 .cert-form input,
+.cert-form input[type='date'],
 .cert-form textarea {
   width: 100%;
   min-height: 48px;
@@ -116,6 +117,11 @@
 .cert-form textarea {
   min-height: 140px;
   resize: vertical;
+}
+
+.cert-form input[type='date'] {
+  color-scheme: light;
+  font-family: inherit;
 }
 
 .cert-search input:focus,

@@ -4,16 +4,33 @@ export const CATALOGUE_URL =
   ''
 
 export const CONTACT = {
-  phoneDisplay: '+971 4 221 15 21',
-  phoneHref: 'tel:+97142211521',
-  whatsappDisplay: '+971569043232',
-  whatsappHref: 'http://api.whatsapp.com/send?phone=971569043232',
-  whatsappWidgetHref: 'https://wa.me/971569043232?text=Hi',
-  email: 'info@nordicbtc.com',
-  emailHref: 'mailto:info@nordicbtc.com',
-  careersEmail: 'careers@nordicbtc.com',
-  careersHref: 'mailto:careers@nordicbtc.com',
-  address: 'PO Box: 12329, Villa No. A 1053 Al Wasl Road, Jumeirah, Dubai, UAE',
+  phoneDisplay: '04235781641',
+  phoneHref: 'tel:04235781641',
+  whatsappDisplay: '+923226027025',
+  whatsappHref: 'https://wa.me/923226027025',
+  whatsappWidgetHref: `https://wa.me/923226027025?text=${encodeURIComponent(
+    [
+      'Hello Crownora Barber Academy,',
+      '',
+      'I would like to enquire about your courses.',
+      '',
+      'Name:',
+      'Phone:',
+      'Email:',
+      'Course:',
+      '',
+      'Please share the course details, duration, fees, and class timings.',
+      '',
+      'Thank you.',
+    ].join('\n'),
+  )}`,
+  email: 'crownorabarber@yahoo.com',
+  emailHref: 'mailto:crownorabarber@yahoo.com',
+  careersEmail: 'crownorabarber@yahoo.com',
+  careersHref: 'mailto:crownorabarber@yahoo.com',
+  address:
+    'Office No.94, Lower Ground Floor, Saddique Trade Center Main Boulevard Gulberg 2, Lahore, Pakistan.',
+  hours: '10 AM to 04:30 PM',
 }
 
 export const SOCIAL = [
@@ -82,7 +99,7 @@ export const QUICK_LINKS = [
   { label: 'Contact', href: '/contact' },
 ]
 
-export const REVIEW_URL = 'https://g.page/r/CVwpAYImCWWlEAE/review'
+export const REVIEW_URL = 'https://crownora-academy.vercel.app/'
 
 export const SEO_CREDIT_URL =
   'https://www.brandcaredigital.com/service/best-seo-agency-dubai/'

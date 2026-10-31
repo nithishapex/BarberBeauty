@@ -111,7 +111,7 @@ export default function EnquiryForm({
 
   const text = enquiryText(values, lead)
   const mailHref = `mailto:${CONTACT.email}?subject=${encodeURIComponent(values.subject.trim())}&body=${encodeURIComponent(text)}`
-  const whatsappHref = `https://wa.me/971569043232?text=${encodeURIComponent(text)}`
+  const whatsappHref = `${CONTACT.whatsappHref}?text=${encodeURIComponent(text)}`
 
   async function copyDetails() {
     try {

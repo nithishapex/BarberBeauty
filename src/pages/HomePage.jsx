@@ -182,28 +182,26 @@ export default function HomePage() {
             <span>Contact</span>
             <p>
               <strong>
-                T: <a href={CONTACT.phoneHref}>+971 4 221 1521</a>
+                T: <a href={CONTACT.phoneHref}>{CONTACT.phoneDisplay}</a>
               </strong>
               <br />
               <strong>
-                <a href={CONTACT.emailHref}>info@nordicbtc.com</a>
+                <a href={CONTACT.emailHref}>{CONTACT.email}</a>
               </strong>
             </p>
           </div>
           <div>
             <span>Open Hours</span>
             <p>
-              <strong>Monday– Friday</strong>
-              <br />
-              <strong>10.00 am – 7.00 pm</strong>
+              <strong>{CONTACT.hours}</strong>
             </p>
           </div>
           <div>
             <span>Location</span>
             <p>
-              <strong>Al Wasl road, Villa A1053,</strong>
+              <strong>Saddique Trade Center, Gulberg 2,</strong>
               <br />
-              <strong>Jumeirah 3, dubai UAE</strong>
+              <strong>Lahore, Pakistan</strong>
             </p>
           </div>
         </div>
@@ -212,7 +210,7 @@ export default function HomePage() {
       <section className="home-hero" aria-label="Introduction">
         <img
           className="home-hero-video"
-          src="/images/home/hero-banner.png"
+          src="/images/home/Luxury%20Barber%20Academy%20in%20Action.png"
           alt=""
           aria-hidden="true"
           fetchPriority="high"
@@ -221,7 +219,10 @@ export default function HomePage() {
         <div className="home-hero-shade" />
 
         <div className="wrap home-hero-copy">
-          <h1>PAKISTAN’S PREMIER INTERNATIONAL BARBER & BEAUTY ACADEMY</h1>
+          <h1>
+            <span className="hero-kicker">Pakistan’s Premier International</span>
+            <span className="hero-gold">Barber &amp; Beauty Academy</span>
+          </h1>
           <Link className="btn btn-white" to="/contact">
             Academy
           </Link>
@@ -232,28 +233,26 @@ export default function HomePage() {
             <span>Contact</span>
             <p>
               <strong>
-                T: <a href={CONTACT.phoneHref}>+971 4 221 1521</a>
+                T: <a href={CONTACT.phoneHref}>{CONTACT.phoneDisplay}</a>
               </strong>
               <br />
               <strong>
-                <a href={CONTACT.emailHref}>info@nordicbtc.com</a>
+                <a href={CONTACT.emailHref}>{CONTACT.email}</a>
               </strong>
             </p>
           </div>
           <div>
             <span>Open Hours</span>
             <p>
-              <strong>Monday– Friday</strong>
-              <br />
-              <strong>10.00 am – 7.00 pm</strong>
+              <strong>{CONTACT.hours}</strong>
             </p>
           </div>
           <div>
             <span>Location</span>
             <p>
-              <strong>Al Wasl road, Villa A1053,</strong>
+              <strong>Saddique Trade Center, Gulberg 2,</strong>
               <br />
-              <strong>Jumeirah 3, dubai UAE</strong>
+              <strong>Lahore, Pakistan</strong>
             </p>
           </div>
         </div>
@@ -296,7 +295,7 @@ export default function HomePage() {
 
       <section className="page-section" aria-labelledby="home-story-title">
         <div className="wrap story-band">
-          <img src="/images/home/story.jpg" alt="Crownora Barber Academy professional barber training" />
+          <img src="/images/home/story.png" alt="Crownora Barber Academy professional barber training" />
           <div>
             <h2 id="home-story-title">Our Story</h2>
             <p>Crafting Skills. Building Careers.</p>

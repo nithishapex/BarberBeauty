@@ -4,24 +4,24 @@ Static Vite and React site. Run it locally with `npm install` and `npm run dev`.
 
 ## My Certificates
 
-This is a frontend prototype. Student access is simulated in the browser. It is not secure authentication, and the demonstration access codes are visible in `src/data/certificates.js` and on the access page.
+This is a frontend prototype. Student access is simulated in the browser. It is not secure authentication. The certificate password is the date of birth, and those details are in `src/data/certificates.js`.
 
-### Demo access
+### Certificate access
 
-| Student | Student ID | Private access code | Certificates |
+| Student | Student ID | Date of birth | Certificate |
 | --- | --- | --- | --- |
-| Hassan Raza | `CBA-STU-2026-00842` | `K7P9-X4M2` | `CBA-BC-2026-0148` Classic Barbering Course, 20 Oct 2026 |
-| Muhammad Ali | `CBA-STU-2026-01933` | `Q8W3-N5T1` | `CBA-HS-2026-0275` Hair Styling & Grooming Course, 22 Oct 2026 |
-| Owais Khan | `CBA-STU-2026-01408` | `B2H6-L9R4` | `CBA-BE-2026-0361` Beard & Men's Grooming Course, 25 Oct 2026 |
-| Noor Ahmed | `CBA-STU-2026-00017` | `T3S8-E1M4` | None. Use this login to see the empty state. |
+| FIROZ IDRISH | `CBA-STU-2026-0001` | `01-01-1996` | `CBA-2026-0001`, issued 13 May 2026 |
+| MOHD TANVEER MOHAMAD MEHTAB SALMANI | `CBA-STU-2026-0002` | `27-10-2004` | `CBA-2026-0002`, issued 12 Jun 2026 |
+| NAVEED AHMAD MUHAMMAD RASHEED RAJPUT | `CBA-STU-2026-0003` | `21-11-1999` | `CBA-2026-0003`, issued 16 May 2026 |
+| NAVED ALI SIKANDER | `CBA-STU-2026-0004` | `12-12-2000` | `CBA-2026-0004`, issued 27 Oct 2026 |
 
-Open `/certificates/access`, enter one student, and choose View Certificate. That opens that student's certificate page directly. There is no personal certificate list.
+Open `/certificates/access`, enter the Student ID and date of birth, and choose View Certificate. That opens that student's certificate page directly. There is no personal certificate list.
 
-The private access code is checked in the browser and is not saved.
+The date of birth is checked in the browser and is not saved.
 
 ### Routes
 
-- `/certificates/access` — Student ID and private access code
+- `/certificates/access` — Student ID and date of birth
 - `/certificates/:certificateId` — opens the same public verification page
 - `/certificates/verify/:certificateId` — certificate view opened from View Certificate or from the QR code, no access code required
 - `/certificates/review/:certificateId` — review form for one certificate
@@ -30,11 +30,11 @@ The private access code is checked in the browser and is not saved.
 
 ### QR verification
 
-Each certificate image keeps the QR code already printed on the artwork. That code is the verification link for that certificate only, for example `http://127.0.0.1:5174/certificates/verify/CBA-BC-2026-0148`. The app does not add a second QR code beside or below the certificate. On the deployed site the code uses the page origin plus the Vite base path. Set `VITE_SITE_URL` to an origin such as `https://nithishapex.github.io` when a code should always use that host. Do not include `/BarberBeauty` in that variable.
+Each certificate image has one QR code in the corner. That code is the verification link for that certificate only, for example `http://127.0.0.1:5173/certificates/verify/CBA-2026-0001`. The app does not add a second QR code beside or below the certificate. On the deployed site the code uses the page origin plus the Vite base path. Set `VITE_SITE_URL` to an origin such as `https://nithishapex.github.io` when a code should always use that host. Do not include `/BarberBeauty` in that variable.
 
 Scanning the code, or choosing View Certificate, opens that certificate's verification page. It does not open the private dashboard, show a private access code, or list other certificates. A direct visit or refresh works in `npm run dev`. GitHub Pages uses `404.html` copied from `index.html` by the deploy workflow, so the same client routes can load there.
 
-The downloaded PNG is the certificate image, with that same QR code in its original place.
+The downloaded file is a PDF of the certificate image, with that same QR code in its original place.
 
 ### Reviews and storage
 
