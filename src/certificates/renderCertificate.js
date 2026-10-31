@@ -18,6 +18,22 @@ async function fetchArtwork(certificate) {
   return response.blob()
 }
 
+function drawCover(context, image, x, y, width, height) {
+  const scale = Math.max(width / image.naturalWidth, height / image.naturalHeight)
+  const sourceWidth = width / scale
+  const sourceHeight = height / scale
+  const sourceX = (image.naturalWidth - sourceWidth) / 2
+  const sourceY = Math.max(0, (image.naturalHeight - sourceHeight) * 0.12)
+  context.save()
+  context.beginPath()
+  context.rect(x, y, width, height)
+  context.clip()
+  context.imageSmoothingEnabled = true
+  context.imageSmoothingQuality = 'high'
+  context.drawImage(image, sourceX, sourceY, sourceWidth, sourceHeight, x, y, width, height)
+  context.restore()
+}
+
 export async function renderCertificateBlob(certificate) {
   const artworkBlob = await fetchArtwork(certificate)
   const artworkUrl = URL.createObjectURL(artworkBlob)
@@ -31,6 +47,23 @@ export async function renderCertificateBlob(certificate) {
     context.imageSmoothingEnabled = true
     context.imageSmoothingQuality = 'high'
     context.drawImage(artwork, 0, 0, canvas.width, canvas.height)
+
+    if (certificate.photo && certificate.portrait) {
+      try {
+        const photo = await loadImage(encodeURI(certificate.photo))
+        const { x, y, width, height } = certificate.portrait
+        drawCover(
+          context,
+          photo,
+          Math.round(x * OUTPUT_SCALE),
+          Math.round(y * OUTPUT_SCALE),
+          Math.round(width * OUTPUT_SCALE),
+          Math.round(height * OUTPUT_SCALE),
+        )
+      } catch {
+        // Keep the printed placeholder when the student photo cannot be loaded.
+      }
+    }
 
     const { x, y, size } = certificate.qr
     const qrX = Math.round(x * OUTPUT_SCALE)

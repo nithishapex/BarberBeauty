@@ -10,7 +10,7 @@ This is a frontend prototype. Student access is simulated in the browser. It is 
 
 | Student | Student ID | Date of birth | Certificate |
 | --- | --- | --- | --- |
-| FIROZ IDRISH | `CBA-2026-368` | `01-01-1996` | `CBA-2026-368`, issued 19 May 2026 |
+| FIROZ IDRISH | `CBA-2026-368` | `01-01-1996` | `CBA-2026-368`, issued 13 May 2026 |
 | MOHD TANVEER MOHAMAD MEHTAB SALMANI | `CBA-2026-978` | `27-10-2004` | `CBA-2026-978`, issued 12 Jun 2026 |
 | NAVEED AHMAD MUHAMMAD RASHEED RAJPUT | `CBA-2026-774` | `21-11-1999` | `CBA-2026-774`, issued 16 May 2026 |
 | NAVED ALI SIKANDER | `CBA-2026-324` | `12-12-2000` | `CBA-2026-324`, issued 27 Oct 2026 |
