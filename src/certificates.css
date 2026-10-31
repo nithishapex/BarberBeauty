@@ -350,13 +350,30 @@
 
 .cert-facts dl {
   display: grid;
-  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 18px;
   margin: 0;
 }
 
-.cert-facts dl div {
+.cert-facts dl > div {
   display: grid;
+  grid-column: 1 / -1;
   gap: 2px;
+}
+
+.cert-facts dl > .cert-fact-half {
+  grid-column: auto;
+  min-width: 0;
+}
+
+.cert-facts dd.cert-status-valid {
+  color: var(--cert-success);
+  font-weight: 700;
+}
+
+.cert-facts dd.cert-status-invalid {
+  color: #9d2c2c;
+  font-weight: 700;
 }
 
 .cert-facts dt {
@@ -588,5 +605,15 @@
 
   .cert-page {
     padding: 36px 0 64px;
+  }
+}
+
+@media (max-width: 420px) {
+  .cert-facts dl {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-facts dl > .cert-fact-half {
+    grid-column: 1 / -1;
   }
 }

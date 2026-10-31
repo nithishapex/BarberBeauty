@@ -4,7 +4,7 @@ import { PhoneIcon } from './Icons'
 export default function FloatingActions() {
   return (
     <div className="float-stack">
-      <a className="float-call" href={CONTACT.phoneHref} aria-label={`Call ${CONTACT.phoneDisplay}`}>
+      <a className="float-call" href={CONTACT.fphoneHref} aria-label={`Call ${CONTACT.fphoneDisplay}`}>
         <PhoneIcon />
       </a>
       <a

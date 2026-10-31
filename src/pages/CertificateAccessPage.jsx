@@ -10,8 +10,8 @@ export default function CertificateAccessPage() {
   const navigate = useNavigate()
   const studentField = useId()
   const codeField = useId()
-  const [studentId, setStudentId] = useState('CBA-STU-2026-0001')
-  const [accessCode, setAccessCode] = useState('1996-01-01')
+  const [studentId, setStudentId] = useState('')
+  const [accessCode, setAccessCode] = useState('')
   const [error, setError] = useState('')
 
   useEffect(() => {
@@ -49,7 +49,9 @@ export default function CertificateAccessPage() {
         <p className="cert-note">The password for a certificate is the date of birth. Choose it from the calendar.</p>
         <form className="cert-panel cert-form" onSubmit={onSubmit} noValidate>
           <div>
-            <label htmlFor={studentField}>Student ID</label>
+            <label htmlFor={studentField}>Student ID
+              <span className="required">*</span>
+            </label>
             <input
               id={studentField}
               name="studentId"
@@ -65,7 +67,9 @@ export default function CertificateAccessPage() {
             />
           </div>
           <div>
-            <label htmlFor={codeField}>Date of Birth</label>
+            <label htmlFor={codeField}>Date of Birth
+              <span className="required">*</span>
+            </label>
             <input
               id={codeField}
               name="dateOfBirth"

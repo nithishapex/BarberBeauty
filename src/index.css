@@ -282,8 +282,8 @@ a {
 
 .brand img,
 .footer-brand img {
-  width: 68px;
-  height: 68px;
+  width: 230px;
+  height: 70px;
   object-fit: contain;
 }
 
@@ -942,8 +942,9 @@ a {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.8fr 1.35fr 0.9fr;
+  grid-template-columns: minmax(180px, 1fr) minmax(140px, 0.75fr) minmax(280px, 1.45fr);
   gap: 36px;
+  align-items: start;
 }
 
 .footer-brand {
@@ -1084,23 +1085,13 @@ a {
   }
 }
 
-@media (max-width: 1399px) {
-  .float-stack {
-    position: static;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: min(1180px, calc(100% - 32px));
-    margin: 0 auto 28px;
-  }
-
-  .site-footer {
-    padding-bottom: 20px;
-  }
-}
-
 @media (max-width: 1100px) {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-grid > :last-child {
+    grid-column: 1 / -1;
   }
 
   .desktop-nav {
@@ -1156,6 +1147,10 @@ a {
   .footer-grid,
   .facts {
     grid-template-columns: 1fr;
+  }
+
+  .site-footer {
+    padding-bottom: 148px;
   }
 
   .catalogue-btn,
@@ -1778,7 +1773,31 @@ a {
     grid-template-columns: 1fr;
     gap: 16px;
     padding-top: 28px;
-    padding-bottom: 24px;
+    padding-bottom: 72px;
+  }
+
+  .float-stack {
+    right: 12px;
+    bottom: 12px;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .float-call {
+    width: 46px;
+    height: 46px;
+    box-shadow: 0 6px 14px rgba(91, 53, 245, 0.28);
+  }
+
+  .float-call svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .float-whatsapp img {
+    width: 46px;
+    height: 46px;
   }
 }
 
@@ -2194,4 +2213,10 @@ a {
     animation: none !important;
     transition: none !important;
   }
+}
+
+
+.required {
+  color: red;
+  margin-left: 3px;
 }

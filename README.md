@@ -10,10 +10,10 @@ This is a frontend prototype. Student access is simulated in the browser. It is 
 
 | Student | Student ID | Date of birth | Certificate |
 | --- | --- | --- | --- |
-| FIROZ IDRISH | `CBA-STU-2026-0001` | `01-01-1996` | `CBA-2026-0001`, issued 13 May 2026 |
-| MOHD TANVEER MOHAMAD MEHTAB SALMANI | `CBA-STU-2026-0002` | `27-10-2004` | `CBA-2026-0002`, issued 12 Jun 2026 |
-| NAVEED AHMAD MUHAMMAD RASHEED RAJPUT | `CBA-STU-2026-0003` | `21-11-1999` | `CBA-2026-0003`, issued 16 May 2026 |
-| NAVED ALI SIKANDER | `CBA-STU-2026-0004` | `12-12-2000` | `CBA-2026-0004`, issued 27 Oct 2026 |
+| FIROZ IDRISH | `CBA-2026-368` | `01-01-1996` | `CBA-2026-368`, issued 19 May 2026 |
+| MOHD TANVEER MOHAMAD MEHTAB SALMANI | `CBA-2026-978` | `27-10-2004` | `CBA-2026-978`, issued 12 Jun 2026 |
+| NAVEED AHMAD MUHAMMAD RASHEED RAJPUT | `CBA-2026-774` | `21-11-1999` | `CBA-2026-774`, issued 16 May 2026 |
+| NAVED ALI SIKANDER | `CBA-2026-324` | `12-12-2000` | `CBA-2026-324`, issued 27 Oct 2026 |
 
 Open `/certificates/access`, enter the Student ID and date of birth, and choose View Certificate. That opens that student's certificate page directly. There is no personal certificate list.
 
@@ -30,7 +30,7 @@ The date of birth is checked in the browser and is not saved.
 
 ### QR verification
 
-Each certificate image has one QR code in the corner. That code is the verification link for that certificate only, for example `http://127.0.0.1:5173/certificates/verify/CBA-2026-0001`. The app does not add a second QR code beside or below the certificate. On the deployed site the code uses the page origin plus the Vite base path. Set `VITE_SITE_URL` to an origin such as `https://nithishapex.github.io` when a code should always use that host. Do not include `/BarberBeauty` in that variable.
+Each certificate image has one QR code in the corner. That code is the verification link for that certificate only, for example `http://127.0.0.1:5173/certificates/verify/CBA-2026-368`. The app does not add a second QR code beside or below the certificate. On the deployed site the code uses the page origin plus the Vite base path. Set `VITE_SITE_URL` to an origin such as `https://nithishapex.github.io` when a code should always use that host. Do not include `/BarberBeauty` in that variable.
 
 Scanning the code, or choosing View Certificate, opens that certificate's verification page. It does not open the private dashboard, show a private access code, or list other certificates. A direct visit or refresh works in `npm run dev`. GitHub Pages uses `404.html` copied from `index.html` by the deploy workflow, so the same client routes can load there.
 

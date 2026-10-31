@@ -9,7 +9,7 @@ export default function Hero() {
       variant="course"
       title="BARBERING COURSE"
       text="Learn with our celebrity artists and gain not only a professional and educational course but a creative and fun course that will lead to a career immediately after graduation. Our barber and hairstylist trainers work with celebrities, influencers, and customers around the world and have over 20 years of experience in the hair industry. Barber Course In Pakistan in Pakistan provides an opportunity to learn from elite Makeup Artists."
-      image="/images/barber.jpg"
+      image="/images/barber.png"
       imageAlt="Students observing a barbering demonstration at Crownora Beauty Academy"
       actions={
         <Link className="btn btn-primary" to="/contact#message">

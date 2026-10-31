@@ -50,34 +50,45 @@ export default function CertificatePanel({ certificate }) {
           <h1>{certificate.studentName}</h1>
           <dl>
             <div>
-              <dt>Certificate ID</dt>
-              <dd>{certificate.id}</dd>
-            </div>
-            <div>
-              <dt>Nationality</dt>
-              <dd>{certificate.nationality}</dd>
-            </div>
-            <div>
-              <dt>Date of birth</dt>
-              <dd>{certificate.dateOfBirth}</dd>
-            </div>
-            <div>
-              <dt>Passport No.</dt>
-              <dd>{certificate.passportNumber}</dd>
-            </div>
-            <div>
               <dt>Academy</dt>
               <dd>
                 {certificate.academyName}, {certificate.country}
               </dd>
             </div>
-            <div>
+            <div className="cert-fact-half">
+              <dt>Certificate ID</dt>
+              <dd>{certificate.id}</dd>
+            </div>
+
+            <div className="cert-fact-half">
               <dt>Issue date</dt>
               <dd>{formatIssueDate(certificate.issueDate)}</dd>
             </div>
+
             <div>
+              <dt>Course</dt>
+              <dd>{certificate.courseName}</dd>
+            </div>
+            <div className="cert-fact-half">
+              <dt>Nationality</dt>
+              <dd>{certificate.nationality}</dd>
+            </div>
+            <div className="cert-fact-half">
+              <dt>Passport No.</dt>
+              <dd>{certificate.passportNumber}</dd>
+            </div>
+
+
+
+            <div className="cert-fact-half">
               <dt>Status</dt>
-              <dd>{statusLabel(certificate.status)}</dd>
+              <dd className={certificate.status === 'valid' ? 'cert-status-valid' : 'cert-status-invalid'}>
+                {statusLabel(certificate.status)}
+              </dd>
+            </div>
+            <div className="cert-fact-half">
+              <dt>Date of birth</dt>
+              <dd>{certificate.dateOfBirth}</dd>
             </div>
           </dl>
           <p>{certificate.summary}</p>

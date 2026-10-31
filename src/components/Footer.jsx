@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { CONTACT, HOME_PATH, QUICK_LINKS, REVIEW_URL, SEO_CREDIT_URL } from '../data/site'
+import { CONTACT, HOME_PATH, QUICK_LINKS } from '../data/site'
 import { ChatIcon, MailIcon, PhoneIcon, PinIcon } from './Icons'
 
 export default function Footer() {
@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="wrap footer-grid">
         <div className="footer-brand">
           <Link to={HOME_PATH}>
-            <img src="/images/logo-light.png" alt="Crownora Barber Academy"
+            <img src="/images/logo-footer.png" alt="Crownora Barber Academy"
               width="160" />
           </Link>
           <p className="copy">
@@ -60,12 +60,12 @@ export default function Footer() {
           </address>
         </div>
 
-        <div>
+        {/* <div>
           <h2>Leave A Review</h2>
           <a className="review-link" href={REVIEW_URL} aria-label="Review us on Google">
             <img src="/images/google-review.png" alt="Review us on Google" width="200" height="88" />
           </a>
-        </div>
+        </div> */}
       </div>
     </footer>
   )

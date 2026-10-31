@@ -6,6 +6,8 @@ export const CATALOGUE_URL =
 export const CONTACT = {
   phoneDisplay: '04235781641',
   phoneHref: 'tel:04235781641',
+  fphoneDisplay: '+923226027025',
+  fphoneHref: 'tel:923226027025',
   whatsappDisplay: '+923226027025',
   whatsappHref: 'https://wa.me/923226027025',
   whatsappWidgetHref: `https://wa.me/923226027025?text=${encodeURIComponent(
