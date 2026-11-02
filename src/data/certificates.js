@@ -53,8 +53,8 @@ const HAIR_SUMMARY =
   'This course was conducted at Crownora Barber Academy, Pakistan and covers advanced hairstyling techniques, modern grooming and professional client care.'
 
 const ART = { imageWidth: 1536, imageHeight: 1024 }
-const PORTRAIT = { x: 1220, y: 401, width: 200, height: 235 }
-const QR = { x: 1225, y: 703, size: 185 }
+const PORTRAIT = { x: 1290, y: 338, width: 200, height: 228 }
+const QR = { x: 1296, y: 653, size: 185 }
 
 export const CERTIFICATES = [
   {
